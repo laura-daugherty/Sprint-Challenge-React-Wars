@@ -1,0 +1,18 @@
+.charList {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.char {
+  background-color:black;
+  color: goldenrod;
+  text-shadow:1px 1px 1px #fff;
+  width: 800px;
+  margin: 20px;
+  border-radius: 10px;
+}
+.char:hover {
+  background-color: goldenrod;
+  color: black;
+}
