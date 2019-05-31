@@ -26,11 +26,20 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS solves our modern problem with data and the Dom. We have lots of dynamic data being used on our websites these days (Facebook) that needed a more memory efficient way to store data and move it around the application. React uses the virtual Dom to handle passing around data to lighten the load for the Dom. The React lets the engineer interact with the virtual Dom while all the Dom management is taken care of by React.
+
 - [ ] What does it mean to _think_ in react?
+
+Thinking in React is a specific way of looking at problems or applications you’d like to build and determining how to solve them using React. React applications are comprised of components, so one of the main points of thinking in React is to identify components you’d like on your page and building them out accordingly. After producing a static version of the page, the second main point of thinking in React is to visualize how the data will flow through the element from the top down. 
 
 - [ ] Describe state.
 
+State is the internal dynamic data of the component.
+
 - [ ] Describe props.
+
+Props are arguments. Props are used to pass data (the state) down through React components. 
+
 
 ## Project Set Up
 
@@ -89,13 +98,13 @@ Your data set will look like this:
 
 Your finished project must include all of the following requirements:
 
-- [ ] A list of Star Wars Characters rendered to the screen.
-- [ ] You must have at least one list element for each star wars character in the data set.
-- [ ] The list elements must all be minimally styled. (Don't rely on browser default styles.)
+- [X] A list of Star Wars Characters rendered to the screen.
+- [X] You must have at least one list element for each star wars character in the data set.
+- [X] The list elements must all be minimally styled. (Don't rely on browser default styles.)
 
 Required best practices:
 
-- [ ] Consistent naming. Examples: variables, functions, classes, and files.
+- [X] Consistent naming. Examples: variables, functions, classes, and files.
 - [ ] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
 - [ ] Consistent quotation usage.
 - [ ] Spell-check.
