@@ -1,10 +1,10 @@
-import React from "react"
+import React from 'react'
 import './StarWars.css'
-import Char from "./Char.js";
+import Char from './Char.js';
 
 function CharList(props) {
   return (
-    <div className="charList">
+    <div className='charList'>
       {props.chars.map(char => {
         return <Char char={char} key={char.id} />;
       })}
