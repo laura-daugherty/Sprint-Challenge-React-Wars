@@ -6,7 +6,7 @@ function CharList(props) {
   return (
     <div className='charList'>
       {props.chars.map(char => {
-        return <Char char={char} key={char.id} />;
+        return <Char char={char} key={char.created} />;
       })}
     </div>
   );
