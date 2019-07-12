@@ -21,6 +21,33 @@ exports[`<App /> should match snapshot 1`] = `
 </div>
 `;
 
+exports[`<Char /> should match snapshot 1`] = `
+<div
+  className="char"
+  style={
+    Object {
+      "backgroundColor": "black",
+      "borderRadius": "10px",
+      "color": "goldenrod",
+      "margin": "20px",
+      "width": "700px",
+    }
+  }
+>
+  <h2
+    className="charName"
+    style={
+      Object {
+        "fontFamily": "'Geostar Fill', cursive",
+        "textShadow": "1px 1px 1px #fff",
+      }
+    }
+  >
+    Press the Button to Fetch a Character
+  </h2>
+</div>
+`;
+
 exports[`<CharList /> should match snapshot 1`] = `
 <div
   className="ui active inverted dimmer"

@@ -6,7 +6,7 @@ import './App.css';
 import "semantic-ui-css/semantic.min.css";
 import background from "./sw-bg.jpg"
 
-import Char from "./components/Char"
+import CharList from "./components/Char"
 import Button from './components/Button'
 
 function App() {
@@ -38,7 +38,10 @@ function App() {
     return (
       <div 
         className='App'
-        style={ {  
+        style={ {
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
           margin: "0",
           padding: "0",
           fontFamily:"Orbitron, sans-serif",
@@ -47,21 +50,24 @@ function App() {
           textAlign: "center",
         } }
       >
-        <h1 
-          className='Header'
-          style={ {
-            color: "black",
-            textShadow: "1px 1px 5px #fff",
-            fontSize: "3rem",
-            fontFamily: 'Geostar Fill, cursive'
-          }}
-        >
-          React Wars
-        </h1>
-        <Button data={data} clickHandler={changeCharacter}/>
-        <Char character={character} />
+        <header>
+          <h1 
+            className='Header'
+            style={ {
+              color: "black",
+              textShadow: "1px 1px 5px #fff",
+              fontSize: "3rem",
+              fontFamily: 'Geostar Fill, cursive'
+            }}
+          >
+            React Wars
+          </h1>
+          <Button data={data} clickHandler={changeCharacter}/>
+        </header>
+        <CharList data={data} character={character} clickHandler={changeCharacter}/>
       </div>
-    );
+
+    )
   }
 }
 
