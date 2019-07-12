@@ -3,39 +3,90 @@
 exports[`<App /> should match snapshot 1`] = `
 <div
   className="App"
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundImage": "url(sw-bg.jpg)",
+      "display": "flex",
+      "flexDirection": "column",
+      "fontFamily": "Orbitron, sans-serif",
+      "height": "-webkit-fill-available",
+      "margin": "0",
+      "padding": "0",
+      "textAlign": "center",
+    }
+  }
 >
-  <h1
-    className="Header"
-  >
-    React Wars
-  </h1>
-  <div
-    className="ui active inverted dimmer"
-  >
-    <div
-      className="ui text loader ui large text loader"
+  <header>
+    <h1
+      className="ui header"
+      style={
+        Object {
+          "color": "black",
+          "fontFamily": "Geostar Fill, cursive",
+          "fontSize": "3rem",
+          "textShadow": "1px 1px 5px #fff",
+        }
+      }
     >
-      Fetching Your Characters
+      React Wars
+    </h1>
+    <div
+      className="ui active inverted dimmer"
+    >
+      <div
+        className="ui text loader ui large text loader"
+      >
+        Fetching Your Characters
+      </div>
     </div>
+  </header>
+  <div
+    className="ui segment"
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "black",
+        "color": "goldenrod",
+        "display": "flex",
+        "height": "200px",
+        "justifyContent": "center",
+        "maxWidth": "700px",
+      }
+    }
+  >
+    <h2
+      className="ui heading"
+      style={
+        Object {
+          "fontFamily": "'Geostar Fill', cursive",
+          "textShadow": "1px 1px 1px #fff",
+        }
+      }
+    >
+      Press Button Above to Fetch Your First Character
+    </h2>
   </div>
 </div>
 `;
 
 exports[`<Char /> should match snapshot 1`] = `
 <div
-  className="char"
+  className="ui segment"
   style={
     Object {
+      "alignItems": "center",
       "backgroundColor": "black",
-      "borderRadius": "10px",
       "color": "goldenrod",
-      "margin": "20px",
-      "width": "700px",
+      "display": "flex",
+      "height": "200px",
+      "justifyContent": "center",
+      "maxWidth": "700px",
     }
   }
 >
   <h2
-    className="charName"
+    className="ui heading"
     style={
       Object {
         "fontFamily": "'Geostar Fill', cursive",
@@ -43,7 +94,7 @@ exports[`<Char /> should match snapshot 1`] = `
       }
     }
   >
-    Press the Button to Fetch a Character
+    Press Button Above to Fetch Your First Character
   </h2>
 </div>
 `;
@@ -55,7 +106,7 @@ exports[`<CharList /> should match snapshot 1`] = `
   <div
     className="ui text loader ui large text loader"
   >
-    Fetching Your Characters
+    Click the Button
   </div>
 </div>
 `;

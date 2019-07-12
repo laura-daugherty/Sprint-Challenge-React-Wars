@@ -1,6 +1,3 @@
-////No longer using - changed to button/character components
-
-
 import React from 'react'
 import './StarWars.css'
 

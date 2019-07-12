@@ -1,26 +1,23 @@
 import React from 'react'
 
 const Char = props => {
-  // const { char } = props
-  console.log("returning Char")
   if (!props.character) {
     return (
-      <div className='char'
+      <div 
+        className='ui segment'
         style={ {  
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           backgroundColor: "black",
           color: "goldenrod",
-          width: "700px",
+          maxWidth: "700px",
           height: "200px",
-          margin: "20px",
-          borderRadius: "10px"
         }}
     >
       <h2 
-        className='charName'
-        style={ {
+        className='ui heading'
+        style={ { 
           fontFamily: "'Geostar Fill', cursive",
           textShadow: "1px 1px 1px #fff"
         }}>
@@ -30,12 +27,11 @@ const Char = props => {
     )
   } else {
     return (
-      <div className='char'
-        style={ {  backgroundColor: "black",
+      <div className='ui segment'
+        style={ {  
+          backgroundColor: "black",
           color: "goldenrod",
           width: "700px",
-          margin: "20px",
-          borderRadius: "10px"
         }}
       >
         <h2 className='charName'

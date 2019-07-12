@@ -46,13 +46,13 @@ function App() {
           padding: "0",
           fontFamily:"Orbitron, sans-serif",
           backgroundImage: `url(${background})`,
-          backgroundSize: "cover",
+          height: "-webkit-fill-available",
           textAlign: "center",
         } }
       >
         <header>
           <h1 
-            className='Header'
+            className='ui header'
             style={ {
               color: "black",
               textShadow: "1px 1px 5px #fff",
@@ -64,7 +64,7 @@ function App() {
           </h1>
           <Button data={data} clickHandler={changeCharacter}/>
         </header>
-        <CharList data={data} character={character} clickHandler={changeCharacter}/>
+        <CharList character={character}/>
       </div>
 
     )

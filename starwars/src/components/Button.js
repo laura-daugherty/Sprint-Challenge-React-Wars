@@ -13,12 +13,13 @@ const Button = (props) => {
     )
   } else {
     return(
-      <button onClick={() => {
-        props.clickHandler(props.data)
-      }}>
+      <button 
+        className="ui secondary button"
+        onClick={() => {
+          props.clickHandler(props.data)
+        }}>
         Fetch a new character
       </button>
-    
     )
   }
 }
