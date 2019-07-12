@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Char = props => {
-  // const char = props.char
   const { char } = props
   return (
     <div className='char'>
