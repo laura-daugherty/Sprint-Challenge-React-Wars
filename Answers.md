@@ -20,3 +20,11 @@ State is the internal dynamic data of the component.
 
 Props are arguments. Props are used to pass data (the state) down through React components. Props are read-only, they can not by dynamically manipulated.
 
+1. What are side effects, and how do you sync effects in a React component to state or prop changes?
+Side effects are the effects that a function can have on things outside of its scope. UseEffect triggers side effects that can be synced to changes in state or props. The side effects are triggered by the second argument to useEffect - an array corresponding to the state that when it changes, you want to trigger the sideEffect.
+
+EX:
+useEffect(arg1, [arg2]) 
+
+Arg1 = function you want to trigger
+Arg2 = state you’re watching for changes to trigger the function, causing the side effect
